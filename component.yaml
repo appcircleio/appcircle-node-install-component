@@ -1,7 +1,7 @@
 platform: Common
 buildPlatform:
 displayName: Install Node
-description: "Install spesificed node version. Defaults to: latest"
+description: "Install the selected node version. Defaults to: latest"
 inputs:
 - key: "AC_SELECTED_NODE_VERSION"
   defaultValue: "$AC_SELECTED_NODE_VERSION"
