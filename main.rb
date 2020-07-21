@@ -8,7 +8,7 @@ end
 selected_node_version = env_has_key("AC_SELECTED_NODE_VERSION") || "latest"
 
 def run_command(command)
-    puts "@[command] #{command}"
+    puts "@@[command] #{command}"
     status = nil
     stdout_str = nil
     stderr_str = nil
