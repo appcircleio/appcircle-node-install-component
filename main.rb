@@ -5,7 +5,7 @@ def env_has_key(key)
 	return (ENV[key] == nil || ENV[key] == "") ? nil : ENV[key]
 end
 
-selected_node_version = env_has_key("AC_SELECTED_NODE_VERSION") || "latest"
+selected_node_version = env_has_key("AC_SELECTED_NODE_VERSION") || "lts"
 
 def run_command(command)
     puts "@@[command] #{command}"

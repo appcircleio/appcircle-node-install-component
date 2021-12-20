@@ -1,13 +1,13 @@
 platform: Common
 buildPlatform:
 displayName: Install Node
-description: "Select a specific Node version for the build. Defaults to: latest"
+description: "Select a specific Node version for the build. Defaults to: lts"
 inputs:
 - key: "AC_SELECTED_NODE_VERSION"
   defaultValue: "$AC_SELECTED_NODE_VERSION"
   isRequired: false
   title: Selected node version
-  description: "Specifies the node version to install. Defaults to: latest"
+  description: "Specifies the node version to install. Defaults to: lts"
   helpText:
 processFilename: ruby
 processArguments: '%AC_STEP_TEMP%/main.rb'
