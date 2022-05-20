@@ -5,7 +5,14 @@ def env_has_key(key)
 	return (ENV[key] == nil || ENV[key] == "") ? nil : ENV[key]
 end
 
-selected_node_version = env_has_key("AC_SELECTED_NODE_VERSION") || "lts"
+def get_version(component_version,config_version)
+    return config_version == nil ? component_version : config_version
+end
+
+component_node_version = env_has_key("AC_SELECTED_NODE_VERSION") || "lts"
+config_node_version = env_has_key("AC_NODE_JS_VERSION")
+selected_node_version = get_version(component_node_version,config_node_version)
+puts "Selected node version is #{selected_node_version}"
 
 def run_command(command)
     puts "@@[command] #{command}"

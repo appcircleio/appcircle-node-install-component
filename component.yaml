@@ -7,7 +7,7 @@ inputs:
   defaultValue: "$AC_SELECTED_NODE_VERSION"
   isRequired: false
   title: Selected node version
-  description: "Specifies the node version to install. Defaults to: lts"
+  description: "Specifies the node version to install. Defaults to: lts. The version you set on config section will override this setting."
   helpText:
 processFilename: ruby
 processArguments: '%AC_STEP_TEMP%/main.rb'
